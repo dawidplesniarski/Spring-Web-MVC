@@ -20,7 +20,6 @@ public class MemberServiceImp implements MemberDao {
 
     @Override
     public List<Member> findAll() throws Exception {
-
         return jdbcTemplate.query(FIND_ALL_SQL, new HashMap<String, Object>(), memberRowMapper);
     }
 }
