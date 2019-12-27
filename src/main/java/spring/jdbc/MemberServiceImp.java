@@ -17,7 +17,6 @@ public class MemberServiceImp implements MemberDao {
     private NamedParameterJdbcOperations jdbcTemplate;
     @Inject private MemberRowMapper memberRowMapper;
 
-
     @Override
     public List<Member> findAll() throws Exception {
         return jdbcTemplate.query(FIND_ALL_SQL, new HashMap<String, Object>(), memberRowMapper);

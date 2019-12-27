@@ -19,8 +19,7 @@ public final class RosterController {
         this.memberDao = memberDao;
     }
 
-    public RosterController(){
-    }
+    public RosterController(){}
     @RequestMapping
     public void list(Model model) throws Exception{
         members = memberDao.findAll();
