@@ -7,7 +7,7 @@ import spring.model.Member;
 import java.util.logging.Logger;
 
 public class NomineeController {
-    private static final Logger log = Logger.getLogger(String.valueOf(NomineeController.class));
+    //private static final Logger log = Logger.getLogger(String.valueOf(NomineeController.class));
     private String thanksViewName;
     public void setThanksViewName(String thanksViewName){
         this.thanksViewName = thanksViewName;
@@ -17,7 +17,7 @@ public class NomineeController {
     public Member form() { return new Member();}
     @RequestMapping(method =  RequestMethod.POST)
     public String processFormData(Member member){
-        log.info("Processing nominee: "+member);
+        //log.info("Processing nominee: "+member);
         return thanksViewName;
     }
 }

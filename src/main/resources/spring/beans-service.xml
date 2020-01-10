@@ -15,10 +15,10 @@
     <bean id="dataSource"
           class="org.apache.commons.dbcp.BasicDataSource"
           destroy-method="close"
-          p:driverClassName="$(dataSource.driverClassName)"
-          p:url="$(dataSource.url)"
-          p:username="$(dataSource.username)"
-          p:password="$(dataSource.password)"/>
+          p:driverClassName="${dataSource.driverClassName}"
+          p:url="${dataSource.url}"
+          p:username="${dataSource.username}"
+          p:password="${dataSource.password}"/>
     <bean class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate"
           c:dataSource-ref="dataSource"/>
 
