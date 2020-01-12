@@ -19,7 +19,9 @@
           p:url="${dataSource.url}"
           p:username="${dataSource.username}"
           p:password="${dataSource.password}"/>
-    <bean class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate"
+
+    <bean id="jdbcTemplate"
+          class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate"
           c:dataSource-ref="dataSource"/>
 
 </beans>
