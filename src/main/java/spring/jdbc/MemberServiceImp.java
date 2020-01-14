@@ -15,12 +15,10 @@ public class MemberServiceImp implements MemberDao {
 
     private static final String FIND_ALL_SQL = "select firstname, lastname from tok.member";
 
-    //@Inject
     @Autowired
     @Qualifier("jdbcTemplate")
     private NamedParameterJdbcOperations jdbcTemplate;
 
-    //@Inject
     @Autowired
     @Qualifier("memberRowMapper")
     private MemberRowMapper memberRowMapper;
