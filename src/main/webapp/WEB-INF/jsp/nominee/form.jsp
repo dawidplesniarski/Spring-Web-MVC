@@ -5,7 +5,7 @@
 </head>
 <body>
 <h1>Nominate a member for the award</h1>
-<form: form modelAttribute="member">
+<form:form modelAttribute="member">
         <div>First name: <form:input path="firstName"/></div>
         <div>Last name: <form:input path="lastName"/></div>
         <div><input type="submit" value="Submit"/></div>
