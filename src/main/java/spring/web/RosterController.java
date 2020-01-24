@@ -13,8 +13,10 @@ import java.util.List;
 public final class RosterController {
 
     private List<Member> members;
-@Autowired
+
+    @Autowired
     private MemberDao memberDao;
+
     public void setMemberDao(MemberDao memberDao){
         this.memberDao = memberDao;
     }

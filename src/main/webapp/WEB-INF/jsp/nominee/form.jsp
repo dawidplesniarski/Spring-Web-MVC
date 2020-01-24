@@ -9,6 +9,6 @@
         <div>First name: <form:input path="firstName"/></div>
         <div>Last name: <form:input path="lastName"/></div>
         <div><input type="submit" value="Submit"/></div>
-</form:>
+</form:form>
 </body>
 </html>
