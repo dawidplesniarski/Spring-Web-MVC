@@ -11,7 +11,6 @@ public class MemberRowMapper implements RowMapper<Member> {
 
     @Override
     public Member mapRow(ResultSet resultSet, int rowNum) throws SQLException{
-        Member member = new Member(resultSet.getString(1),resultSet.getString(2));
-        return member;
+        return new Member(resultSet.getString(1),resultSet.getString(2));
     }
 }

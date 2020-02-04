@@ -14,10 +14,10 @@ public final class RosterController {
 
     private List<Member> members;
 
-    @Autowired
     private MemberDao memberDao;
 
-    public void setMemberDao(MemberDao memberDao){
+    @Autowired
+    public void setMemberDao(@Autowired MemberDao memberDao){
         this.memberDao = memberDao;
     }
 
